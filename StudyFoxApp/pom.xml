@@ -22,7 +22,6 @@
 
     <build>
         <plugins>
-            <!-- Maven Shade Plugin for packaging the executable jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -37,7 +36,6 @@
                 </executions>
             </plugin>
 
-            <!-- Maven Jar Plugin to create the JAR with the main class and resources -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -53,7 +51,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Resources Plugin to copy the resources, such as the icon, to the target folder -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
